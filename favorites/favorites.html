@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <div class="layout">
-    <div class="search-bar">
-        <input id="search" type="text" class="search-input">
-        <div id="country-capital">
-            <div class="search-item">
-                <label for="country">Country</label>
-                <input id="country" type="radio" value="1" name="country-capital">
-            </div>
-            <div class="search-item">
-                <label for="capital">Capital</label>
-                <input id="capital" type="radio" value="2" name="country-capital">
-            </div>
-        </div>
-    </div>
+    <header class="header-container">
+        <a class="anchor-element" href="../home-page/home-page.html">Home</a>
+        <a class="anchor-element" href="../favorites/favorites.html">My Favorite Countries</a>
+    </header>
     <td class="country-list">
         <div class="search-criteria">
             <h1 id="search-criteria" ></h1>
@@ -51,6 +42,6 @@
         </table>
     </div>
 </div>
-<script type="module" src="home-page.js"></script>
+<script src="favorites.js"></script>
 </body>
 </html>

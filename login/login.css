@@ -39,7 +39,7 @@ body{
   border: none;
   outline: none;
   background: none;
-  color: wheat;
+  color: black;
   font-size: 18px;
   width: 80%;
   float: left;
@@ -56,6 +56,6 @@ body{
   margin: 12px 0;
 }
 ::placeholder{
-    color: wheat;
+    color: black;
     
 }

@@ -1,36 +1,32 @@
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const button = document.getElementById("login");
 
-const loginBox = document.querySelector(".login-box")
-const textBox = document.querySelector(".textbox")
-const inputName = document.querySelector(".input-name")
-const inputPass = document.querySelector(".input-pass")
-const butt = document.querySelector("but")
-const username = document.getElementById('username');
-const password = document.getElementById('password');
-
-window.onload = () => {
-    const loginElement = document.getElementById("login");
-    if (loginElement) {
-        loginElement.addEventListener("click", () => {
-            login();
-        });
-    }
-}
-
-const login = () => {
-    if (usernameValid() && passwordValid()) {
-        window.location = "./index.html";
-    }
-    else {
-    }
-}
 
 const usernameValid = () => {
-    return username.value === username.value.trim();
-}
+  return username.value === username.value.trim();
+};
 
 const passwordValid = () => {
-    return password.value.trim().length > 4;
-}
+  return password.value.trim().length > 4;
+};
 
 
+
+const login = () => {
+  if (usernameValid() && passwordValid()) {
+    window.location = "../home-page/home-page.html";
+    // console.log(window.location = "/home-page.html")
+  }
+};
+
+
+
+window.onload = () => {
+  if (button) {
+    button.addEventListener("click", () => {
+      login();
+    });
+  }
+};
 
