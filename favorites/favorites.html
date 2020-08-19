@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home-page.css">
+</head>
+<body>
+<div class="layout">
+    <div class="search-bar">
+        <input id="search" type="text" class="search-input">
+        <div id="country-capital">
+            <div class="search-item">
+                <label for="country">Country</label>
+                <input id="country" type="radio" value="1" name="country-capital">
+            </div>
+            <div class="search-item">
+                <label for="capital">Capital</label>
+                <input id="capital" type="radio" value="2" name="country-capital">
+            </div>
+        </div>
+    </div>
+    <td class="country-list">
+        <div class="search-criteria">
+            <h1 id="search-criteria" ></h1>
+        </div>
+        <table class="list-of-countries">
+            <thead>
+                <tr>
+                    <th class="header-item">Flag</th>
+                    <th class="header-item">Country</th>
+                    <th class="header-item">Capital</th>
+                    <th class="header-item">Language</th>
+                    <th class="header-item"> Favorite</th>
+                </tr>
+            </thead>
+            <tbody id="listOfCountries">
+            <!--
+            <tr class="list-container">
+                <td class="table-item">
+                    <img class="image" width="30px"
+                         src="https://restcountries.eu/data/col.svg"/>
+                </td>
+                <td class="table-item">COLUMBIA</td>
+                <td class="table-item">Bogotá</td>
+                <td class="table-item">Spanish</td>
+            </tr>
+            -->
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="module" src="home-page.js"></script>
+</body>
+</html>
